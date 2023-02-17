@@ -9,7 +9,7 @@ from movies_scraper import search_movies, get_movie
 
 
 TOKEN = osgetenv("TOKEN")
-URL = "https://autourlshortbot.vercel.app/"
+URL = "https://autourlshortbot.vercel.app"
 bot = Bot(TOKEN)
 
 

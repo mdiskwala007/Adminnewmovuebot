@@ -20,7 +20,7 @@ def welcome(update, context) -> None:
 
 
 def find_movie(update, context):
-    search_results = update.message.reply_text("Ruk Ja dhudhra Hu.....")
+    search_results = update.message.reply_text("🔎Ruk Ja dhudhra Hu.....")
     query = update.message.text
     movies_list = search_movies(query)
     if movies_list:
@@ -29,7 +29,7 @@ def find_movie(update, context):
             keyboard = InlineKeyboardButton(movie["title"], callback_data=movie["id"])
             keyboards.append([keyboard])
         reply_markup = InlineKeyboardMarkup(keyboards)
-        search_results.edit_text('Search Results...', reply_markup=reply_markup)
+        search_results.edit_text('👇Ye Movie Mili he👇...', reply_markup=reply_markup)
     else:
         search_results.edit_text(' Nahi Mila Yaar\nCheck If You Have Misspelled The Movie Name. /n Jo Movie Na Mile  Vuska Name is Group Me Send Kar do 👇👇👇👇 /n       [@DRxMOVIEREQUEST]')
 

@@ -31,7 +31,7 @@ def find_movie(update, context):
         reply_markup = InlineKeyboardMarkup(keyboards)
         search_results.edit_text('👇Ye Movie Mili he👇...', reply_markup=reply_markup)
     else:
-        search_results.edit_text(' Nahi Mila Yaar\nCheck If You Have Misspelled The Movie Name. /n Jo Movie Na Mile  Vuska Name is Group Me Send Kar do 👇👇👇👇 /n       [@DRxMOVIEREQUEST]')
+        search_results.edit_text(' Nahi Mila Yaar\nCheck If You Have Misspelled The Movie Name. Jo Movie Na Mile  Vuska Name is Group Me Send Kar do 👇👇👇👇       [@DRxMOVIEREQUEST]')
 
 
 def movie_result(update, context) -> None:
